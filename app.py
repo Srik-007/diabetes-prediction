@@ -17,11 +17,11 @@ with open('scaler.pkl','rb') as file:
 st.title("Patient diabetes prediction")
 Pregnancies=st.number_input('Number of Pregnancies you had',0,30)
 Glucose=st.number_input('Glucose level')
-BloodPressure=st.number_input("Blood Pressure Level (enter between 90 to 300 mmHg)",min_value=90,max_value=300)
+BloodPressure=st.number_input("Blood Pressure Level (enter between 90 to 300 mmHg)",min_value=60,max_value=300)
 SkinThickness=st.number_input('Average Skin Thickness',min_value=10)
 Insulin=st.number_input('Enter insulin level')
 BMI=st.number_input('Enter you BMI')
-DiabetesPedigreeFunction=st.number_input('What is you genetic contribution to diabetes',min_value=0.08,max_value=0.42)
+DiabetesPedigreeFunction=st.number_input('What is you genetic contribution to diabetes',min_value=0.08,max_value=2.42)
 Age=st.slider("Enter age",1,100)
 
 input_data=pd.DataFrame({
