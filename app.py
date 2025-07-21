@@ -43,4 +43,5 @@ prediction_probability
 if prediction_probability>0.5:
     st.write(f"patient most likely has diabetes \n chances of having diabetes {prediction_probability}")
 else:
-    st.write(f"Patient most likely will not have diabetes \n chances of having diabete {prediction_probability}")
+    st.write(f"Patient most likely will not have diabetes
+    chances of having diabete {prediction_probability}")
